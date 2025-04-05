@@ -1,0 +1,48 @@
+/* Общий контейнер корзины */
+
+.cart-container {
+    width: 100%;
+    margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+/* Блок товара */
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Изображение */
+.cart-item-image {
+    width: 100px; /* Фиксированная ширина для изображения */
+    margin-right: 20px;
+}
+
+.cart-item-image img {
+    max-width: 100%; /* Адаптивность изображения */
+    height: auto;
+    display: block; /* Убирает отступ снизу у inline элементов */
+}
+
+/* Детали товара (наименование, описание) */
+.cart-item-details {
+    flex-grow: 1; /* Занимает все доступное пространство */
+}
+
+/* Цена */
+.cart-item-price {
+    width: 100px; /* Фиксированная ширина для цены */
+    text-align: right;
+}
+
+/* Количество */
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cart-item-quantity-value {
+    margin: 0 5px;
+}

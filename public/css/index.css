@@ -1,0 +1,216 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0; /* Убираем стандартные отступы body */
+}
+
+a {
+  color: inherit; /* Наследуем цвет от родителя */
+  text-decoration: none; /* Убираем подчеркивание по умолчанию */
+}
+
+/* Сетка товаров */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ещё большую гибкость */
+  gap: 2rem; /* Увеличиваем отступы между элементами */
+  padding: 2rem; /* Отступы от краев */
+}
+
+.product-item {
+  background-color: #fff; /* Белый фон для карточек */
+  border-radius: 0.5rem; /* Скругление углов */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.08); /* Легкая тень */
+  transition: transform 0.2s ease-in-out; /* Плавная анимация при наведении */
+  overflow: hidden; /* Обрезаем выходящий контент (например, тени) */
+  padding: 1.5rem;
+  text-align: left; /* Текст слева */
+  position: relative;
+}
+
+.product-item:hover {
+  transform: translateY(-0.25rem); /* Приподнимаем карточку при наведении */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12); /* Увеличиваем тень */
+}
+
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-size: 1.5rem; /* Увеличиваем размер заголовка */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e44d26; /* Акцентный цвет */
+  margin-bottom: 1rem;
+}
+
+/* Кнопка "Подробнее" */
+.product-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e44d26; /* Акцентный цвет */
+  color: #fff;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.product-link:hover {
+  background-color: #c63e20; /* Более темный цвет при наведении */
+  box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+/* Шапка (Header) */
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.wraper_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Ограничиваем ширину шапки */
+  margin: 0 auto; /* Центрируем шапку */
+  padding: 0 1rem; /* Отступы по бокам */
+  box-sizing: border-box;
+}
+
+.ful-logo {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 150px; /* Фиксированная ширина логотипа */
+  height: auto;
+  display: block;
+}
+
+/* Навигация */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end; /* Выравниваем пункты меню по правому краю */
+  width: auto; /* Занимаем необходимую ширину */
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: #555 !important;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 0.375rem; /* Скругление углов ссылок */
+}
+
+.nav-link:hover {
+  color: #e44d26 !important; /* Акцентный цвет при наведении */
+  background-color: rgba(228, 77, 38, 0.1); /* Легкий акцентный фон при наведении */
+  text-decoration: none; /* Убираем подчеркивание при наведении */
+} 
+
+.wraper_reg {
+  display: flex;
+  align-items: center; /* Выравнивание по горизонтали (крест-ось) */
+  gap: 10px; /* Расстояние между элементами */
+  flex-direction: column;
+   /* Расположение элементов в столбик (основная ось) */
+}
+
+/* Стиль для ссылок (Регистрация, Вход) */
+
+
+/* Стиль для кнопки "Выход" */
+.button_header_dop_nav {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Зеленый цвет */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px; /* Плавный переход цвета фона */
+}
+
+/* Стиль для кнопки "Выход" при наведении */
+.button_header_dop_nav:hover {
+  background-color: #3e8e41; /* Более темный зеленый фон при наведении */
+}
+
+body{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.product-grid-cart-botton-to-db {
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: 0px; /* Отступ от нижнего края */
+  left: 50%; /* Горизонтальное центрирование */
+  transform: translateX(-50%); /* Сдвиг на половину ширины кнопки влево */
+  background-color: #a9b8a9; /* Зеленый цвет */
+  color: white; /* Белый текст */
+  padding: 10px 20px; /* Отступы */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Закругленные углы */
+  cursor: pointer; /* Меняем курсор при наведении */
+}
+
+.product-grid-cart-botton-to-db:hover {
+  background-color: #939493; /* Более темный зеленый цвет при наведении */
+}
+
+
+
+.product-grid-cart-button-in-cart {
+    background-color: #4CAF50; /* Красный цвет */
+    color: white;
+    cursor: not-allowed; /* Меняем курсор */
+}
+
+.product-grid-cart-button-in-cart:hover {
+    background-color: #3e8e41; /* Более темный красный при наведении */
+}
+

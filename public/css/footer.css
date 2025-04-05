@@ -1,0 +1,67 @@
+.footer {
+    position: relative; /* Исправлена опечатка */
+    padding-top: 10px;
+    min-height: 15vh; /* Изменено на min-height для адаптивности */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    font-size: 22px;
+    text-align: center; /* Центрируем текст по умолчанию */
+}
+
+.footer h2 {
+    font-size: 40px;
+    margin-bottom: 20px; /* Добавим отступ снизу */
+}
+
+.footer_wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px; /* Добавим отступы */
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Добавим отступ сверху */
+}
+
+.footer__socials {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Располагаем элементы в строку */
+    gap: 20px; /* Добавляем отступы между элементами */
+}
+
+.footer__social__element a {
+    color: black;
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: text-shadow 0.3s ease;
+}
+
+
+
+
+.footer__social__element a.link.social-element__link {
+    color: #555 !important;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 0.375rem; /* Скругление углов ссылок */
+}
+
+.footer__social__element a.link.social-element__link:hover {
+    color: #e44d26 !important; /* Акцентный цвет при наведении */
+    background-color: rgba(228, 77, 38, 0.1); /* Легкий акцентный фон при наведении */
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+  } 
+.tradishion_social {
+    text-align: left; /* Выравнивание текста влево */
+}
+
