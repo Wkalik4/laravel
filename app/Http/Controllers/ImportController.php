@@ -13,8 +13,8 @@ class ImportController extends Controller
         Log::info('Импорт номенклатуры запущен');
 
         // Замените на ваши логин и пароль
-        $username = "odata.OOOTRI-M43002261@yandex.ru";
-        $password = "4i&5%-q4V' j";
+        $username = "";
+        $password = "";
 
         // Создаем строку аутентификации и кодируем ее
         $auth_string = $username . ":" . $password;
